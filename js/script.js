@@ -54,3 +54,23 @@ console.log(colors)
 
 for (let i = 0; i < colors.length; i++)
 	console.log(`My color is: ${colors[i].charAt(0).toUpperCase() + colors[i].slice(1)}`)
+
+console.log('-------')
+
+const cars = 'Audi, Mercedes, BMW, Nissan, Toyota'
+
+const newCars = cars.split(', ')
+console.log(newCars)
+
+if (newCars.length > 3) {
+	console.log('Jest OK!')
+} else {
+	console.log('Nie jest ok')
+}
+
+if (newCars.includes('Audi')) {
+	newCars.push('Skoda')
+} else {
+	newCars.pop
+}
+console.log(newCars)
