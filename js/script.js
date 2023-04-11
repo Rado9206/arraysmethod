@@ -74,3 +74,30 @@ if (newCars.includes('Audi')) {
 	newCars.pop
 }
 console.log(newCars)
+
+console.log('');
+console.log('-------')
+console.log('callback and forEach excercise')
+const numbers3 = [0.5, 4, 'abc']
+const names = ['Zuza', 'Bartek', 'Jagoda', 'Radek']
+
+numbers3.forEach(num => console.log(num * num))
+
+console.log('-------')
+console.log('uupercase array')
+const bigNames = names.map(name => name.toUpperCase())
+console.log(bigNames);
+
+
+
+console.log('-------')
+console.log('from array')
+const showBigNames = (name) => {
+	console.log(name.toUpperCase());
+}
+
+names.forEach(showBigNames)
+
+console.log('-------')
+console.log('one line code:')
+names.forEach(el => console.log(el.toUpperCase()))
